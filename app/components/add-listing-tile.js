@@ -8,7 +8,8 @@ export default Ember.Component.extend({
           user: this.get('user'),
           details: this.get('details'),
           location: this.get('location'),
-          category: this.get('category')
+          category: this.get('category'),
+          date_added: new Date(),
         };
         this.sendAction('addListing', params);
       }

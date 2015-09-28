@@ -5,5 +5,6 @@ export default DS.Model.extend({
   user: DS.attr(),
   title: DS.attr(),
   details: DS.attr(),
-  location: DS.attr()
+  location: DS.attr(),
+  date_added: DS.attr()
 });

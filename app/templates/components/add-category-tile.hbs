@@ -1,0 +1,13 @@
+<h3>Add New Category</h3>
+
+<div class="container">
+  <form>
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      {{input value=name id="name"}}
+    </div>
+
+    <button {{action "addCategory"}}>Add</button>
+  </form>
+</div>

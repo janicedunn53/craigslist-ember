@@ -1,0 +1,9 @@
+<h3>Admin</h3>
+
+<ul>
+  {{#each model as |category|}}
+    {{category-tile category=category destroyCategory="destroyCategory"}}
+  {{/each}}
+</ul>
+
+{{add-category-tile addCategory="addCategory"}}

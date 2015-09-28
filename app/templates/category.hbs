@@ -1,1 +1,7 @@
-{{model.name}}
+<h1>{{model.name}}</h1>
+
+{{#each model.listings as |listing|}}
+<h5>{{listing.name}}</h5>
+{{/each}}
+
+{{add-listing-tile category=model addListing="addListing"}}

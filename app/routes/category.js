@@ -12,7 +12,6 @@ export default Ember.Route.extend({
       newListing.save().then(function() {
         return category.save();
       });
-      debugger;
 
       this.transitionTo('category', params.category);
     }

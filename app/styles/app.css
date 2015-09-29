@@ -1,1 +1,64 @@
+.container.index {
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+  padding: 5%;
+  background-color: rgba(255,158,28,0.7);
+  border-radius: 5px;
+}
 
+.mini {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+body {
+  font-family: 'pacifico';
+  background: url('/img/bg.jpeg') no-repeat center center fixed;
+
+}
+
+h1.index {
+  font-size: 80px;
+}
+
+textarea#details.form-control.ember-view.ember-text-area {
+  width: 50%;
+  margin: auto;
+}
+
+input#location.form-control.ember-view.ember-text-field {
+  width: 50%;
+  margin: auto;
+}
+
+input#user.form-control.ember-view.ember-text-field {
+  width: 50%;
+  margin: auto;
+}
+
+input#title.form-control.ember-view.ember-text-field {
+  width: 50%;
+  margin: auto;
+}
+
+input#name.form-control.ember-view.ember-text-field {
+  width: 50%;
+  margin: auto;
+}
+
+/*.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
+    color: #33a6cc;
+    border-color: #33a6cc;
+    background-color: rgba(255,158,28,0.1);
+    border-width: 2px;
+
+
+}*/
+.btn-default.outline {
+    border-color: #7F4F0E;
+    color: #7F4F0E;
+    box-shadow: none;
+    background-color: rgba(255,158,28,0.1);
+    border-width: 2px;
+}

@@ -1,22 +1,23 @@
-<div class="container">
+<div class="mini">
+  <h4>Update listing</h4>
   <form>
-
     <div class="form-group">
       <label for="title">Title:</label>
-      {{input value=title id="title"}}
-    </div>
-    <div class="form-group">
-      <label for="details">Details:</label>
-      {{input value=details id="details"}}
+      {{input class="form-control" value=title id="title"}}
     </div>
     <div class="form-group">
       <label for="user">User:</label>
-      {{input value=user id="user"}}
+      {{input class="form-control" value=user id="user"}}
     </div>
     <div class="form-group">
       <label for="location">Location:</label>
-      {{input value=location id="location"}}
+      {{input class="form-control" value=location id="location"}}
     </div>
-    <button {{action "updateListing" listing}}>Update</button>
+    <div class="form-group">
+      <label for="details">Details:</label>
+      {{textarea value=details id="details" class="form-control" rows="3"}}
+    </div>
+
+    <button class="btn btn-default btn-md outline" {{action "updateListing" listing}}>Update</button>
   </form>
 </div>

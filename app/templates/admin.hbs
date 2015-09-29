@@ -1,9 +1,12 @@
-<h3>Admin</h3>
+<div class="container index">
+  <h3>Admin</h3>
 
-<ul>
   {{#each model as |category|}}
     {{admin-tile category=category destroyCategory="destroyCategory"}}
   {{/each}}
-</ul>
 
-{{add-category-tile addCategory="addCategory"}}
+
+  {{add-category-tile addCategory="addCategory"}}
+
+  {{#link-to 'index'}}Home{{/link-to}}
+</div>

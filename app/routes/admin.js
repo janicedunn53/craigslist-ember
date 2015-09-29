@@ -10,11 +10,11 @@ export default Ember.Route.extend({
       newCategory.save().then(function() {
         return category.save();
       });
-      this.transitionTo('index');
+      this.transitionTo('admin');
     },
     destroyCategory(category) {
       category.destroyRecord();
-      this.transitionTo('index');
+      this.transitionTo('admin');
     }
   }
 });

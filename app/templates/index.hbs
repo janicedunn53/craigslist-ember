@@ -1,9 +1,14 @@
-<h1>Craigslist</h1>
+<div class="container index">
+  <div class="mini">
+  <h1 class="index">Craigslist</h1>
+</div>
+<div class="mini">
 
-<p>Today is: {{current-date}}</p>
+  <p>Today is: {{current-date}}</p>
 
-<ul>
-  {{#each model as |category|}}
-    {{category-tile category=category}}
-  {{/each}}
-</ul>
+
+    {{#each model as |category|}}
+      {{category-tile category=category}}
+    {{/each}}
+</div>
+</div>

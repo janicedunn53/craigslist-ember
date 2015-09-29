@@ -1,10 +1,15 @@
-<h1>{{model.title}}</h1>
+<div class="container index">
+  <div class="mini">
+    <h1>{{model.title}}</h1>
 
-<h3>{{model.location}}</h3>
+    <h3>{{model.location}}</h3>
+    <h3>{{model.details}}</h3>
+    <p>Posted by {{model.user}} on {{format-date model.date_added}}</p>
+    <br>
 
-<p>{{model.user}}</p>
-<p>{{format-date model.date_added}}</p>
-<p>{{model.details}}</p>
+    {{update-listing listing=model updateListing="updateListing"}}
+    <button class="btn btn-default btn-md outline"{{action "destroyListing" model}}>Delete</button>
+  </div>
 
-{{update-listing listing=model updateListing="updateListing"}}
-<button {{action "destroyListing" model}}>Delete</button>
+  {{#link-to 'index'}}Home{{/link-to}}
+</div>

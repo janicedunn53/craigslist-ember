@@ -1,7 +1,14 @@
-<h1>{{model.name}}</h1>
+<div class="container index">
+  <div class="mini">
 
-{{#each model.listings as |listing|}}
-<h5>{{#link-to 'listing' listing}}{{listing.title}}{{/link-to}}</h5>
-{{/each}}
+    <h1>{{model.name}}</h1>
 
-{{add-listing-tile category=model addListing="addListing"}}
+    {{#each model.listings as |listing|}}
+    <h3>{{#link-to 'listing' listing}}{{listing.title}}{{/link-to}}</h3>
+    {{/each}}
+
+    {{add-listing-tile category=model addListing="addListing"}}
+  </div>
+
+  {{#link-to 'index'}}Home{{/link-to}}
+</div>

@@ -1,7 +1,12 @@
 {"categories": [{
+    "name": "Community"
+  }, {
+    "name": "Housing"
+  }, {
     "name": "Jobs"
   }, {
-    "name": "housing"
-  }
-  ]
+    "name": "Personals"
+  }, {
+    "name": "For Sale"
+  }]
 }

@@ -1,11 +1,11 @@
-# Craigslist
+# Connorslist
 Ember Exercise for Epicodus, September 29, 2015
 
 By Janice V. Dunn and Julianna Green
 
 ## Description
 
-This application is similar to craigslist and provides classifieds for the community. Admin may add categories while users can add listings.
+This application is similar to craigslist and provides classifieds for the community. Administrators may add and delete categories while users can add, update, and delete listings.
 
 ## Prerequisites
 

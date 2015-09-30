@@ -1,4 +1,4 @@
-# Connorslist
+# Caseyslist
 Ember Exercise for Epicodus, September 29, 2015
 
 By Janice V. Dunn and Julianna Green

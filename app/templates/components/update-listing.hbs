@@ -1,23 +1,27 @@
 <div class="mini">
-  <h4>Update listing</h4>
-  <form>
-    <div class="form-group">
-      <label for="title">Title:</label>
-      {{input class="form-control" value=title id="title"}}
-    </div>
-    <div class="form-group">
-      <label for="user">User:</label>
-      {{input class="form-control" value=user id="user"}}
-    </div>
-    <div class="form-group">
-      <label for="location">Location:</label>
-      {{input class="form-control" value=location id="location"}}
-    </div>
-    <div class="form-group">
-      <label for="details">Details:</label>
-      {{textarea value=details id="details" class="form-control" rows="3"}}
-    </div>
+  {{#if updateListingForm}}
+    <h4>Update Listing</h4>
+    <form>
+      <div class="form-group">
+        <label for="title">Title:</label>
+        {{input class="form-control" value=title id="title"}}
+      </div>
+      <div class="form-group">
+        <label for="user">User:</label>
+        {{input class="form-control" value=user id="user"}}
+      </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        {{input class="form-control" value=location id="location"}}
+      </div>
+      <div class="form-group">
+        <label for="details">Details:</label>
+        {{textarea value=details id="details" class="form-control" rows="3"}}
+      </div>
 
-    <button class="btn btn-default btn-md outline" {{action "updateListing" listing}}>Update</button>
-  </form>
+      <button class="btn btn-default btn-md outline" {{action 'updateListing' listing}}>Update</button>
+    </form>
+  {{else}}
+    <button class="btn btn-default btn-md outline" {{action 'updateListingForm'}}>Update</button>
+  {{/if}}
 </div>

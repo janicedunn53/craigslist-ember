@@ -3,8 +3,8 @@
   text-align: center;
   margin-top: 5%;
   padding: 5%;
-  background-color: rgba(255,158,28,0.7);
-  border-radius: 5px;
+  background-color: rgba(255, 158, 28, 0.6);
+  border-radius: 10px;
 }
 
 .mini {
@@ -46,14 +46,6 @@ input#name.form-control.ember-view.ember-text-field {
   margin: auto;
 }
 
-/*.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
-    color: #33a6cc;
-    border-color: #33a6cc;
-    background-color: rgba(255,158,28,0.1);
-    border-width: 2px;
-
-
-}*/
 .btn-default.outline {
     border-color: #7F4F0E;
     color: #7F4F0E;

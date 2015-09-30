@@ -1,7 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  updateListingForm: false,
+
   actions: {
+    updateListingForm() {
+      this.set('updateListingForm', true);
+    },
     updateListing(listing) {
       var params = {
         title: this.get('title'),
@@ -12,6 +17,7 @@ export default Ember.Component.extend({
         date_added: new Date(),
 
       };
+      this.set('updateListingForm', false);
       this.sendAction('updateListing', listing, params);
     }
   }

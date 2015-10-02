@@ -5,7 +5,7 @@ By Janice V. Dunn and Julianna Green
 
 ## Description
 
-This application is similar to craigslist and provides classifieds for the community. Administrators may add and delete categories while users can add, update, and delete listings.
+This application is similar to craigslist in that it provides classifieds for the community. Administrators may add and delete categories while users can add, update, and delete listings.
 
 ## Prerequisites
 
